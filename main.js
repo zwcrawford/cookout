@@ -33,6 +33,7 @@ const cookedFood = [];
 function grill (currentObject) {
     // Modify the food so that it is cooked
     for (let i = 0; i < uncookedFood.length; i++) {
+        // Noticed that when passing an array as an argument, I must reference the array's index value within the for loop. It is not enough to say currentObject.cooked = true;            
         currentObject[i].cooked = true;
         // Put the cooked food into the appropriate array
         cookedFood.push(currentObject[i]);
